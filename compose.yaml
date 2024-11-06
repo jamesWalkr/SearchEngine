@@ -1,0 +1,10 @@
+services:
+  mariadb:
+    image: mariadb:latest
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MARIA_DB_ROOT_PASSWD}
+      # MARIADB_USER: ${MARIA_DB_USER}
+      # MARIADB_PASSWORD: ${MARIA_DB_PASSWD}
+      MARIADB_DATABASE: ${MARIA_DB}
+    ports:
+      - "3306:3306"
